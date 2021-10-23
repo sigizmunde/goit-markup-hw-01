@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,27 +9,29 @@
   <body>
     <header>
       <div class="toppanel">
-        <a href="/">Логотип сайта</a>
         <nav>
+          <a href="/">Логотип сайта</a>
           <ul class="menu-items">
             <li class="menu-item"><a href="#">Студия</a></li>
             <li class="menu-item"><a href="#">Портфолио</a></li>
             <li class="menu-item"><a href="#">Контакты</a></li>
           </ul>
         </nav>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
-      </div>
-      <div class="coverpanel">
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button class="orderbtn" type="button">Заказать услугу</button>
+        <ul class="header-contacts">
+          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
       </div>
     </header>
     <main>
+      <section class="hero">
+        <h1>Эффективные решения для вашего бизнеса</h1>
+        <button class="orderbtn" type="button">Заказать услугу</button>
+      </section>
       <section class="benefits">
+        <h2 class="hidden-h2">Преимущества</h2>
         <ul>
           <li class="benefits-item">
-            <!-- maybe needs refactoring to article inside each li -->
             <h3>Внимание к деталям</h3>
             <p>
               Идейные соображения, а также начало повседневной работы по
@@ -98,8 +100,8 @@
               width="270"
               height="260"
             />
-            <p class="person-name">Игорь Демьяненко</p>
-            <p class="person-position">Product Designer</p>
+            <h3 class="person-name">Игорь Демьяненко</h3>
+            <p class="person-position" lang="en">Product Designer</p>
           </li>
           <li class="person">
             <img
@@ -108,8 +110,8 @@
               width="270"
               height="260"
             />
-            <p class="person-name">Ольга Репина</p>
-            <p class="person-position">Frontend Developer</p>
+            <h3 class="person-name">Ольга Репина</h3>
+            <p class="person-position" lang="en">Frontend Developer</p>
           </li>
           <li class="person">
             <img
@@ -118,8 +120,8 @@
               width="270"
               height="260"
             />
-            <p class="person-name">Николай Тарасов</p>
-            <p class="person-position">Marketing</p>
+            <h3 class="person-name">Николай Тарасов</h3>
+            <p class="person-position" lang="en">Marketing</p>
           </li>
           <li class="person">
             <img
@@ -128,8 +130,8 @@
               width="270"
               height="260"
             />
-            <p class="person-name">Михаил Ермаков</p>
-            <p class="person-position">UI Designer</p>
+            <h3 class="person-name">Михаил Ермаков</h3>
+            <p class="person-position" lang="en">UI Designer</p>
           </li>
         </ul>
       </section>
@@ -137,9 +139,11 @@
     <footer>
       <a href="/">Логотип сайта</a>
       <address>
-        г. Киев, пр-т Леси Украинки, 26<br />
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a><br />
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
+        <ul class="footer-contacts">
+          <li><p>г. Киев, пр-т Леси Украинки, 26</p></li>
+          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
       </address>
     </footer>
   </body>
